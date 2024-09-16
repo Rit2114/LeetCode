@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0539-minimum-time-difference](https://github.com/Rit2114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0906-walking-robot-simulation](https://github.com/Rit2114/LeetCode/tree/master/0906-walking-robot-simulation) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Rit2114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/Rit2114/LeetCode/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0539-minimum-time-difference](https://github.com/Rit2114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/Rit2114/LeetCode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Rit2114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/Rit2114/LeetCode/tree/master/2076-sum-of-digits-of-string-after-convert) |
@@ -50,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0539-minimum-time-difference](https://github.com/Rit2114/LeetCode/tree/master/0539-minimum-time-difference) |
 | [2155-find-missing-observations](https://github.com/Rit2114/LeetCode/tree/master/2155-find-missing-observations) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/Rit2114/LeetCode/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Linked List
@@ -73,4 +76,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1786-count-the-number-of-consistent-strings](https://github.com/Rit2114/LeetCode/tree/master/1786-count-the-number-of-consistent-strings) |
+## Sorting
+|  |
+| ------- |
+| [0539-minimum-time-difference](https://github.com/Rit2114/LeetCode/tree/master/0539-minimum-time-difference) |
 <!---LeetCode Topics End-->
