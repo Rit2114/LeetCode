@@ -4,7 +4,11 @@ class FindSumPairs:
         self.nums2 = nums2
         self.freq = Counter(nums2)
 
-    
+    def add(self, index: int, val: int) -> None:
+        self.freq[self.nums2[index]] -= 1  # Remove old one
+        self.nums2[index] += val
+        self.freq[self.nums2[index]] += 1  # Count new one
+
     def count(self, tot: int) -> int:
         ans = 0
         for a in self.nums1:  
