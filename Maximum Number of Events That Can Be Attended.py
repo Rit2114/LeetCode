@@ -26,4 +26,15 @@ class Solution:
 
         return dp[n][k]
 
-    
+    def findLastNonOverlapping(self, events, right, targetStart):
+        left = 0
+        res = -1
+        while left <= right:
+            mid = (left + right) // 2
+            if events[mid][1] < targetStart:
+                res = mid
+                left = mid + 1
+            else:
+                right = mid - 1
+        return res
+
