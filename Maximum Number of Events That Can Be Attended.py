@@ -24,7 +24,6 @@ class Solution:
                 # Option 2: take current event and add to prev best
                 dp[i][j] = max(dp[i - 1][j], dp[prev + 1][j - 1] + value)
 
-        # Step 6: Return final answer
         return dp[n][k]
 
     
