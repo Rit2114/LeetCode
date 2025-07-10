@@ -16,4 +16,16 @@ class Solution:
             maxGapPrefix[i]= max(maxGapPrefix[i-1],gapsArr[i])
         for i in range(size-1,0,-1):
             maxGapSuffix[i-1]= max(maxGapSuffix[i],gapsArr[i])
-          
+        ans = 0
+        for i in range(size):
+            curr = gapsArr[i]+gapsArr[i+1]
+            barSize = endTime[i] - startTime[i]
+            isValid = False
+            if(i-1 >= 0):
+                isValid = isValid or maxGapPrefix[i-1] >= barSize
+            if(i+1 < size):
+                isValid = isValid or maxGapSuffix[i+1] >= barSize
+            if(isValid):
+                curr += barSize
+            ans = max(ans, curr)
+        return ans  
