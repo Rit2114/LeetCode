@@ -6,3 +6,14 @@ class Node:
         self.children = {}
         self.signature = ""
 
+class Solution:
+    def deleteDuplicateFolder(self, paths):
+        root = Node("")
+        for path in paths:
+            node = root
+            for folder in path:
+                if folder not in node.children:
+                    node.children[folder] = Node(folder)
+                node = node.children[folder]
+        
+        
