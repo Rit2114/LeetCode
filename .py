@@ -16,4 +16,3 @@ class Solution:
                     node.children[folder] = Node(folder)
                 node = node.children[folder]
         
-        
