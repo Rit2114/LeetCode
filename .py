@@ -11,4 +11,4 @@ class Solution:
             else:
                 cnt = 1
                 ans += s[i]
-       
+        return ans
