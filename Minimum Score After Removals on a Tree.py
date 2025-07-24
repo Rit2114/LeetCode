@@ -9,3 +9,8 @@ class Solution:
        if v-p:D(v,u);s[u]^=s[v];d[u]|=d[v]
      D(0,-1)
      r,t=9e9,s[0]
+     for i in range(1,n):
+      for j in range(i+1,n):
+       x,y=s[i],s[j]
+       k=(y,x^y,t^x)if d[i]>>j&1 else(x,y^x,t^y)if d[j]>>i&1 else(x,y,t^x^y)
+       r=min(r,max(k)-min(k))
