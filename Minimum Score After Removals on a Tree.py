@@ -14,3 +14,4 @@ class Solution:
        x,y=s[i],s[j]
        k=(y,x^y,t^x)if d[i]>>j&1 else(x,y^x,t^y)if d[j]>>i&1 else(x,y,t^x^y)
        r=min(r,max(k)-min(k))
+    return r
