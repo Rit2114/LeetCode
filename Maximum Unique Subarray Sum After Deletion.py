@@ -12,3 +12,5 @@ class Solution:
             sum += val
         if len(st) > 0:
             return sum
+        else:
+            return mxNeg
