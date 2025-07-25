@@ -8,3 +8,7 @@ class Solution:
                 st.add(nums[i])
             else:
                 mxNeg = max(mxNeg, nums[i])
+        for val in st:
+            sum += val
+        if len(st) > 0:
+            return sum
