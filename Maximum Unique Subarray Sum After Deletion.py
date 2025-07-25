@@ -6,3 +6,5 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] > 0:
                 st.add(nums[i])
+            else:
+                mxNeg = max(mxNeg, nums[i])
