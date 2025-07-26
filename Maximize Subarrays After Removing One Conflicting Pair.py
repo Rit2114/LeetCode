@@ -12,3 +12,5 @@ class Solution:
                 left = max(left, [l, left[0]], [left[0], l])
             ans += r - left[0]
             imp[left[0]] += left[0] - left[1]
+        
+        return ans + max(imp)
