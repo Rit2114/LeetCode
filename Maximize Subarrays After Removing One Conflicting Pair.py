@@ -7,4 +7,8 @@ class Solution:
         ans = 0
         left = [0, 0]
         imp = [0] * (N + 1)
-        
+        for r in range(1, N + 1):
+            for l in right[r]:
+                left = max(left, [l, left[0]], [left[0], l])
+            ans += r - left[0]
+            imp[left[0]] += left[0] - left[1]
