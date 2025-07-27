@@ -6,4 +6,7 @@ class Solution:
         while i<n:
             while i<n and prev==nums[i]: i+=1
             if i==n: break
-            bigger=1 if nums[i]>prev 
+            bigger=1 if nums[i]>prev else 0
+            diff[bigger]=1
+            cnt+=diff[bigger] and diff[1-bigger]
+            diff[1-bigger]=0 
