@@ -10,3 +10,6 @@ class Solution:
             diff[bigger]=1
             cnt+=diff[bigger] and diff[1-bigger]
             diff[1-bigger]=0 
+            prev=nums[i]
+            i+=1
+        return cnt
