@@ -3,3 +3,4 @@ class Solution:
         n = len(fruits)
         alloted = 0
         for i in range(n):
+            for j in range(n):
