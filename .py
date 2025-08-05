@@ -8,3 +8,4 @@ class Solution:
                     baskets[j] = -1  # mark as used
                     alloted += 1
                     break
+        return n - alloted
