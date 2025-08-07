@@ -16,4 +16,9 @@ class Solution:
          for j in range(1, n-1):
             for i in range(max(j+1, n-j-1), n-1):
                 fruits[i][j]+=max(fruits[i-1][j-1], fruits[i][j-1], fruits[i+1][j-1])
+                fruits[-1][j]+=max(fruits[-2][j-1], fruits[-1][j-1])
+
+        return diag+fruits[n-2][n-1]+fruits[n-1][n-2]    
+ 
+
             
