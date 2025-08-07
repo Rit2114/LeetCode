@@ -11,3 +11,6 @@ class Solution:
         for i in range(1, n-1):
             for j in range(max(i+1, n-i-1), n-1):
                 fruits[i][j]+=max(fruits[i-1][j-1], fruits[i-1][j], fruits[i-1][j+1])
+            fruits[i][-1]+=max(fruits[i-1][-2], fruits[i-1][-1])
+        
+        
