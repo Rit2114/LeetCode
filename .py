@@ -7,3 +7,7 @@ class Solution:
         for i in range(n-2):
             fruits[i][n-2-i]=fruits[i][n-3-i]=0
         fruits[n-2][0]=0
+
+        for i in range(1, n-1):
+            for j in range(max(i+1, n-i-1), n-1):
+                fruits[i][j]+=max(fruits[i-1][j-1], fruits[i-1][j], fruits[i-1][j+1])
