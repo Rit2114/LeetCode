@@ -7,4 +7,6 @@ class Solution:
             digit = n % 3
             if digit == 1:
                 count1 += 1
+                if count1 > 1:
+                    return False
         
