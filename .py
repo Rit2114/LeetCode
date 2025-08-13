@@ -12,3 +12,4 @@ class Solution:
             if digit == 2:
                 return False
             n //= 3
+        return count1 == 1
