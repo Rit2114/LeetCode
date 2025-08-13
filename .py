@@ -9,4 +9,6 @@ class Solution:
                 count1 += 1
                 if count1 > 1:
                     return False
-        
+            if digit == 2:
+                return False
+            n //= 3
