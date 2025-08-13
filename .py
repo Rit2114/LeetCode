@@ -3,4 +3,8 @@ class Solution:
         if n <= 0:
             return False
         count1 = 0
+        while n > 0:
+            digit = n % 3
+            if digit == 1:
+                count1 += 1
         
