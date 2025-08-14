@@ -3,6 +3,8 @@ class Solution:
         if "999" in s: return "999"
         if "888" in s: return "888"
         if "777" in s: return "777"
+        
+        if "666" in s: return "666"
         if "555" in s: return "555"
         if "444" in s: return "444"
         if "333" in s: return "333"
