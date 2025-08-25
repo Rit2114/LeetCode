@@ -14,3 +14,4 @@ class Solution:
             else:
                 ans.extend(diagonal[:])
             need_reversed = 1 - need_reversed
+        return ans
