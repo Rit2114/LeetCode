@@ -9,3 +9,8 @@ class Solution:
         ans = []
         need_reversed = 1
         for diagonal in diagonals:
+            if need_reversed:
+                ans.extend(diagonal[::-1])
+            else:
+                ans.extend(diagonal[:])
+            need_reversed = 1 - need_reversed
