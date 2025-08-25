@@ -6,3 +6,6 @@ class Solution:
         for r in range(rows):
             for c in range(cols):
                 diagonals[r + c].append(mat[r][c])
+        ans = []
+        need_reversed = 1
+        for diagonal in diagonals:
