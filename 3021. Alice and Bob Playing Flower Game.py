@@ -4,3 +4,4 @@ class Solution:
         en=n//2
         om=math.ceil(m/2)
         em=m//2
+        return (on*em)+(en*om)
