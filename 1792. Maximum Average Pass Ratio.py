@@ -9,3 +9,10 @@ class Solution:
             
         heapify(A)
 
+        for _ in range(k):
+            (r, p, q)=A[0]
+            if r==0: break
+            sum-=r # change sign
+            r2=(p-q)/((q +1.0)* (q + 2.0))
+            heapreplace(A, (r2, p+1, q+1))
+
