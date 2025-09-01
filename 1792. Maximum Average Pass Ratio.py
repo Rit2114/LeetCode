@@ -6,3 +6,6 @@ class Solution:
         for p,q in classes:
             sum+=p/q
             A.append(((p-q)/(q*(q+1)), p, q)) # change sign
+            
+        heapify(A)
+
