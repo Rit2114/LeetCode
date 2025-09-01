@@ -15,4 +15,5 @@ class Solution:
             sum-=r # change sign
             r2=(p-q)/((q +1.0)* (q + 2.0))
             heapreplace(A, (r2, p+1, q+1))
+        return sum/n            
 
