@@ -7,5 +7,12 @@ class Solution:
         for i in range(n):
             top = points[i][1]
             bot = float("-inf")
-            
+            for j in range(i + 1, n):
+                y = points[j][1]
+                if bot < y <= top:
+                    result += 1
+                    bot = y
+                    if bot == top:
+                        break
+        
 
