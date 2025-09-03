@@ -14,5 +14,5 @@ class Solution:
                     bot = y
                     if bot == top:
                         break
-        
+        return result
 
