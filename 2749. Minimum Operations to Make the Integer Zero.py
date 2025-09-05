@@ -13,5 +13,6 @@ class Solution:
             ones = s.bit_count()
             if ones <= t:
                 return t
+        return -1
 
       
