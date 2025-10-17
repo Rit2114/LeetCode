@@ -14,3 +14,18 @@ class Solution(object):
         used = 0
         cntUsed = 0
         ans = 1
+
+        for i in range(n - 1, -1, -1):
+            ch = ord(s[i]) - ord('a')
+            if (used & (1 << ch)) == 0:
+                if cntUsed == k:
+                    cntUsed = 0
+                    used = 0
+                    ans += 1
+                used |= (1 << ch)
+                cntUsed += 1
+            ansr[i] = ans
+            usedr[i] = used
+
+        ansl = 0
+        ans = ansr[0]
