@@ -11,3 +11,16 @@ class Solution(object):
         q = deque([s])
         seen = set([s])
         res = s
+
+        while q:
+            curr = q.pop()
+            if curr < res:
+                res = curr
+            
+            temp = list(curr)
+            for i in range(1, l, 2):
+                temp[i] = str((int(temp[i]) + a) % 10)
+            temp_s = ''.join(temp)
+            if temp_s not in seen:
+                seen.add(temp_s)
+                q.append(temp_s)
