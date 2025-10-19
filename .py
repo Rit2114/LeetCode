@@ -24,3 +24,12 @@ class Solution(object):
             if temp_s not in seen:
                 seen.add(temp_s)
                 q.append(temp_s)
+
+            rotated = curr[-b:] + curr[:-b]
+            if rotated not in seen:
+                seen.add(rotated)
+                q.append(rotated)
+        
+        return res
+
+    
