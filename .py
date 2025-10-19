@@ -7,3 +7,7 @@ class Solution(object):
         :rtype: str
         """
         
+        l = len(s)
+        q = deque([s])
+        seen = set([s])
+        res = s
