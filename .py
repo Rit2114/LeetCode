@@ -1,4 +1,4 @@
-lass Solution(object):
+class Solution(object):
     def findLexSmallestString(self, s, a, b):
         """
         :type s: str
@@ -6,3 +6,4 @@ lass Solution(object):
         :type b: int
         :rtype: str
         """
+        
